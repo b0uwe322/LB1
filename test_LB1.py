@@ -2,7 +2,6 @@ import unittest
 from LB1 import circle_area
 from math import pi
 
-
 class TestCircleArea(unittest.TestCase):
 
     def test_area(self):
