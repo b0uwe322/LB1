@@ -1,9 +1,8 @@
 from math import pi
 
+
 def circle_area(r):
     return pi*r**2
-
-
 
 if __name__ == "__main__":
     r_list = [2, 0, -14, True, [24], 'ergeg']
