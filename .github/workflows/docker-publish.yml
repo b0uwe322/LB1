@@ -26,7 +26,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v4
       with:
-        images: ${{ secrets.DOCKER_USERNAME }}/lb1
+        images: ${{ secrets.DOCKER_USERNAME }}/lb2
 
     - name: Build and push
       uses: docker/build-push-action@v4
