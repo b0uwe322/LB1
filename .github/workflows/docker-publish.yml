@@ -12,6 +12,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: GetValue
+        run: ls -la
+
+      - name: WhereDockerfile
+        run: |
+          if [ -f Dockerfile ]; then
+            echo "Dockerfile найден!"
+            cat Dockerfile | head -n 5
+          else
+            echo "Dockerfile НЕ НАЙДЕН!"
+            echo "Вот все файлы с 'docker' в имени:"
+            ls -la | grep -i docker || echo "ничего не найдено"
+          fi
+
       - name: Docker Hub login
         uses: docker/login-action@v2
         with:
