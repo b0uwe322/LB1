@@ -1,4 +1,4 @@
-name: DockerFileWork
+name: DockerFileWorkы
 
 on:
   release:
