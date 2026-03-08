@@ -1,7 +1,8 @@
 name: DockerFileWork
 
 on:
-  release
+  release:
+    types: [published]
 
 jobs:
   build:
